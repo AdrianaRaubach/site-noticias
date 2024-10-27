@@ -1,6 +1,3 @@
-body {
-    height: 100vh;
-}
 .header {
     background-color: #006FFF;
     display: flex;
@@ -38,7 +35,7 @@ body {
     color: #ffffff;
 }
 .search {
-    background-image: url('/src/img/lupa.png');
+    background-image: url('src/img/lupa.png');
     background-repeat: no-repeat;
     background-position: 10px center;
     padding-left: 55px;
