@@ -59,7 +59,7 @@
     padding: 1em;
 }
 .menu {
-    background-color: #006effb4;
+    background-color: #006effd5;
     display: flex;
     font-size: 16px;
     font-weight: 600;
@@ -257,12 +257,15 @@ a:link {
     width: 180px;
     justify-self: end;
 }
-.galeria h6{
+.galeria p{
     color: red;
     margin-top: 7px;
 }
-.galeria h4{
+.galeria .valor{
     font-weight: 600;
+    color: #000000;
+    font-size: 25px;
+    margin-top: 0px;
 }
 
 @media (max-width: 1210px) { 
