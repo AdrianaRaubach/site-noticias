@@ -94,9 +94,9 @@ a:link {
     padding: 20px;
     border: none;
     gap: 30px;
-    color: #006FFF;
     font-weight: 600;
     font-family: "Inria Sans", sans-serif;
+
 }
 .noticia-destaque {
     font-size: 40px;
@@ -117,6 +117,10 @@ a:link {
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+.cards-noticias a , .noticia-destaque a{
+    color: #0049a8;
 }
 .section-1 , .section-3{
     display: flex;
