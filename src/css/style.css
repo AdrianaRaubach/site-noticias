@@ -186,6 +186,27 @@ a:link {
     font-weight: 600;
 }
 
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    justify-content: flex-end;
+    gap: 8px;
+    
+}
+
+.galeria img{
+    display: flex;
+    max-width: 100%;
+}
+
+.galeria h6{
+    color: red;
+    margin-top: 7px;
+}
+.galeria h4{
+    font-weight: 600;
+}
+
 @media (max-width: 1210px) { 
     .noticia-destaque {
         font-size: 30px;
