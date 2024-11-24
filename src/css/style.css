@@ -200,7 +200,8 @@ a:link {
 }
 .galeria img{
     display: flex;
-    max-width: 100%;
+    width: 100%;
+    max-width: 209,333px;
 }
 
 .img-primeiro-a-saber-pqn{
