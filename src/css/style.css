@@ -1,38 +1,30 @@
+:root {
+    --cor-principal: #004094; /* Azul */
+  }
+  
 .header {
-    background-color: #006FFF;
-    display: flex;
-    justify-content: space-between;
-    color: #ffffff;
-    padding: 0 30px;
-    height: 70px;
-    font-family: "Indie Flower", cursive;
-    font-size: 25px;
-    align-items: center;
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 1030;
 }
-.header .logo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
+.container-fluid {
+    background-color: var(--cor-principal);
 }
-.header .logo-legenda {
-    font-family: "Inria Sans", sans-serif;
-    font-size: 15px;
-    font-weight: bold;
-    margin-top: -45px;
+.bg-light {
+    background-color: var(--cor-principal) !important;;
 }
-.header .logo-name {
-    font-size: 40px;
+.navbar-toggler {
+    background-color: #ffffff;
 }
-.header .logo-reduzido {
-    display: none;
-}
-.header .link-logo{
-    text-decoration: none;
+.navbar-brand{
     color: #ffffff;
+    font-family: "Indie Flower", cursive;
+    font-size: 35px;
+
+}
+.nav-link {
+    color: #ffffff;
+    font-weight: 600;
 }
 .search {
     background-image: url('../img/lupa.webp');
@@ -44,7 +36,7 @@
     max-width: 300px;
     min-width: 190px;
     border-radius: 10px;
-    border: solid 1px #006FFF;
+    border: solid 1px var(--cor-principal);
     background-color: rgba(255, 255, 255, 0.4);
 }
 .search::placeholder {
@@ -79,7 +71,7 @@ a:link {
 }
 
 .menu li a:active {
-    background-color: #006FFF;
+    background-color: var(--cor-principal);
 }
 .container {
     display: flex;
@@ -143,38 +135,33 @@ a:link {
 .card img {
     width: 30%;
     max-width: 188px;
+    min-width: 120px;
 }
 .publicidade img {
     width: 30vw;
     max-width: 454px;
 }
-.section-2 {
-    display: flex;
-    padding: 30px;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+.carousel {
+    width: 30vw;
+    max-width: 350px;
+    min-width: 200px;
+    margin: 0 auto;
 }
-.noticia-carrossel {
-    background-color: #00000059;
-    margin-top: -90px;
-    font-size: 20px;
-    color: #ffffff;
-    font-weight: 600;
-    border-radius: 0 0 25px 25px;
-    padding: 15px;
+.carousel-item img {
+    max-width: 100%;
 }
-.cards-carrossel img, .cards-carrossel p {
-    max-width: 280px;
-    min-width: 100px;
-    opacity: 99%;
+.carousel-caption {
+    background-color: rgba(10, 10, 10, 0.384);
+    border-radius: 10px;
+    font-weight: 500;
 }
+
 .publicidade .publi-coca2 {
     display: none;
     width: 80vw;
-    margin-top: -50px;
 }
 .footer {
-    background-color: #006FFF;
+    background-color: var(--cor-principal);
     margin-top: 30px;
 }
 .lista-footer {
@@ -207,6 +194,10 @@ a:link {
 .img-primeiro-a-saber-pqn{
     display: none;
 }
+
+.modal-dialog {
+    width: 45vh;
+}
 .form-newsletter {
     margin-top: 30px;
     display: grid;
@@ -221,7 +212,7 @@ a:link {
 }
 #formulario {
     padding: 30px;
-    background-color: #006FFF;
+    background-color: var(--cor-principal);
     color: #ffffff;
     justify-items: center;
     align-content: space-evenly;
@@ -263,7 +254,7 @@ a:link {
     justify-self: end;
 }
 .galeria p{
-    color: red;
+    color: rgb(110, 0, 0);
     margin-top: 7px;
 }
 .galeria .valor{
@@ -310,6 +301,7 @@ a:link {
     }
     .publi-coca2 {
         display: flex !important;
+
     }
     .publi-coca1{
         display: none;

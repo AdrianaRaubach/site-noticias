@@ -9,29 +9,54 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
     <title>Dev News</title>
-    <meta name="description" content="Site de notícias sobre o mundo da tecnologia!">
+    <meta name="title" content="Dev News" />
+    <meta name="description" content="Site de notícias sobre o mundo da tecnologia!" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://adrianaraubach.github.io/site-noticias/" />
+    <meta property="og:title" content="Dev News" />
+    <meta property="og:description" content="Site de notícias sobre o mundo da tecnologia!" />
+    <meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://adrianaraubach.github.io/site-noticias/" />
+    <meta property="twitter:title" content="Dev News" />
+    <meta property="twitter:description" content="Site de notícias sobre o mundo da tecnologia!" />
+    <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
+
+
 </head>
 <body>
     <header class="header">
-        <a href="#" class="link-logo">
-            <div class="logo">
-                <p class="logo-name logo-reduzido">&lt;DN&gt;</p> 
-                <p class="logo-name logo-complete">&lt;Dev News&gt;</p> 
-                <p class="logo-legenda">notícias sobre tecnologia</p>
-            </div> 
-        </a>
-        <input type="text" class="search" placeholder="buscar">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">&lt;Dev News&gt;</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">&lt;Inteligência Artificial/&gt;</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">&lt;Cybersegurança/&gt;</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">&lt;Computação em Nuvem/&gt;</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">&lt;Realidade Virtual/&gt;</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">&lt;Automação e Robótica/&gt;</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#galeria">&lt;Tecnologia e Sociedade/&gt;</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
-    <nav>
-          <ul class="menu">
-            <li><a href="#">&lt;Inteligência Artificial/&gt;</a></li>
-            <li><a href="#">&lt;Cybersegurança/&gt;</a></li>
-            <li><a href="#">&lt;Computação em Nuvem/&gt;</a></li>
-            <li><a href="#">&lt;Realidade Virtual/&gt;</a></li>
-            <li><a href="#">&lt;Automação e Robótica/&gt;</a></li>
-            <li><a href="#">&lt;Tecnologia e Sociedade/&gt;</a></li>
-          </ul>
-    </nav>
     <main class="container">
         <section class="section-1">
             <div class="noticia-destaque">
@@ -60,29 +85,55 @@
             </div>
         </section>
         <section class="section-2">
-            <div class="cards-carrossel">
-                <a href="#">
-                    <img src="src/img/cyberseguranca.webp" alt="cybersegurança">
-                    <p class="noticia-1-carrossel noticia-carrossel">Cybersegurança em Alta: O Aumento de Ameaças</p>
-                </a>
-            </div>
-            <div class="cards-carrossel">
-                <a href="#">
-                    <img src="src/img/impressao3d.webp" alt="impressora 3d">
-                    <p class="noticia-2-carrossel noticia-carrossel">Tecnologia de Impressão 3D e o Futuro da Indústria</p>
-                </a>
-            </div>
-            <div class="cards-carrossel">
-                <a href="#">
-                    <img src="src/img/realidadeaumentada.webp" alt="realidade aumentada">
-                    <p class="noticia-3-carrossel noticia-carrossel">Realidade Aumentada Transforma a Educação</p>
-                </a> 
-            </div>
-            <div class="cards-carrossel">
-                <a href="#">
-                    <img src="src/img/exploracaoespacial.webp" alt="exploração espacial">
-                    <p class="noticia-4-carrossel noticia-carrossel">Exploração Espacial: A Corrida Tecnológica Entre</p>
-                </a>
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="#">
+                            <img src="src/img/cyberseguranca.webp" class="d-block w-100" alt="cybersegurança">
+                            <div class="carousel-caption">
+                                <p>Cybersegurança em Alta: O Aumento de Ameaças</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="#">
+                            <img src="src/img/impressao3d.webp" class="d-block w-100" alt="impressora 3d">
+                            <div class="carousel-caption">
+                                <p>Tecnologia de Impressão 3D e o Futuro da Indústria</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="#">
+                            <img src="src/img/realidadeaumentada.webp" class="d-block w-100" alt="realidade aumentada">
+                            <div class="carousel-caption">
+                                <p>Realidade Aumentada Transforma a Educação</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="#">
+                            <img src="src/img/exploracaoespacial.webp" class="d-block w-100" alt="exploração espacial">
+                            <div class="carousel-caption">
+                                <p>Exploração Espacial: A Corrida Tecnológica Entre</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
             </div>
         </section>
         <section class="section-3">
@@ -111,38 +162,198 @@
                 </div>
             </div>
         </section>
-        <section class="galeria">
+        <section class="galeria" id="galeria">
             <div class="produto1">
-                <img src="src/img/1.webp" alt="camiseta">
-                <p><s>De R$49,90</s></p>
-                <p class="valor">Por R$39,90</p>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#modalProduto1">
+                    <img src="src/img/1.webp" alt="camiseta">
+                    <p><s>De R$49,90</s></p>
+                    <p class="valor">Por R$39,90</p>
+                </a>
             </div>
             <div class="produto2">
-                <img src="src/img/2.webp" alt="camiseta">
-                <p><s>De R$49,90</s></p>
-                <p class="valor">Por R$39,90</p>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#modalProduto2">
+                    <img src="src/img/2.webp" alt="camiseta">
+                    <p><s>De R$49,90</s></p>
+                    <p class="valor">Por R$39,90</p>
+                </a>
             </div>
             <div class="produto3">
-                <img src="src/img/3.webp" alt="camiseta">
-                <p><s>De R$49,90</s></p>
-                <p class="valor">Por R$39,90</p>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#modalProduto3">
+                    <img src="src/img/3.webp" alt="camiseta">
+                    <p><s>De R$49,90</s></p>
+                    <p class="valor">Por R$39,90</p>
+                </a>
             </div>
             <div class="produto4">
-                <img src="src/img/4.webp" alt="camiseta">
-                <p><s>De R$49,90</s></p>
-                <p class="valor">Por R$39,90</p>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#modalProduto4">
+                    <img src="src/img/4.webp" alt="camiseta">
+                    <p><s>De R$49,90</s></p>
+                    <p class="valor">Por R$39,90</p>
+                </a>
             </div>
             <div class="produto5">
-                <img src="src/img/5.webp" alt="camiseta">
-                <p><s>De R$49,90</s></p>
-                <p class="valor">Por R$39,90</p>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#modalProduto5">
+                    <img src="src/img/5.webp" alt="camiseta">
+                    <p><s>De R$49,90</s></p>
+                    <p class="valor">Por R$39,90</p>
+                </a>
             </div>
-            <div class="produto5">
-                <img src="src/img/6.webp" alt="camiseta">
-                <p><s>De R$49,90</s></p>
-                <p class="valor">Por R$39,90</p>
+            <div class="produto6">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#modalProduto6">
+                    <img src="src/img/6.webp" alt="camiseta">
+                    <p><s>De R$49,90</s></p>
+                    <p class="valor">Por R$39,90</p>
+                </a>
             </div>
+            
         </section>
+
+        <div class="modal fade" id="modalProduto1" tabindex="-1" aria-labelledby="modalProduto1Label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalProduto1Label">Camiseta 1</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="src/img/1.webp" class="img-fluid" alt="camiseta">
+                        <p>Tamanhos Disponíveis: <s>PP</s> P M <s>G</s> GG XG</p>
+                        <p>R$39,90</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalProduto2" tabindex="-1" aria-labelledby="modalProduto2Label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalProduto2Label">Camiseta 2</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="src/img/2.webp" class="img-fluid" alt="camiseta">
+                        <p>Tamanhos Disponíveis: <s>PP</s> P <s>M</s> G GG XG</p>
+                        <p>R$39,90</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalProduto3" tabindex="-1" aria-labelledby="modalProduto3Label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalProduto3Label">Camiseta 3</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="src/img/3.webp" class="img-fluid" alt="camiseta">
+                        <p>Tamanhos Disponíveis: PP P M <s>G</s> GG <s>XG</s></p>
+                        <p>R$39,90</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalProduto4" tabindex="-1" aria-labelledby="modalProduto4Label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalProduto4Label">Camiseta 4</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="src/img/4.webp" class="img-fluid" alt="camiseta">
+                        <p>Tamanhos Disponíveis: PP <s>P</s> M G GG XG</p>
+                        <p>R$39,90</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalProduto5" tabindex="-1" aria-labelledby="modalProduto5Label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalProduto5Label">Camiseta 5</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="src/img/5.webp" class="img-fluid" alt="camiseta">
+                        <p>Tamanhos Disponíveis: <s>PP</s> <s>P</s> M <s>G</s> GG XG</p>
+                        <p>R$39,90</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalProduto6" tabindex="-1" aria-labelledby="modalProduto6Label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalProduto6Label">Camiseta 6</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="src/img/6.webp" class="img-fluid" alt="camiseta">
+                        <p>Tamanhos Disponíveis: PP P <s>M</s> G GG <s>XG</s></p>
+                        <p>R$39,90</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <table class="table table-striped table-bordered table-hover">
+            <thead>
+                <tr>
+                    <td colspan="3" class="text-center">Tabela de Tamanhos</td>
+                </tr>
+                <tr>
+                    <th scope="col">Tamanho</th>
+                    <th scope="col">Largura</th>
+                    <th scope="col">Altura</th>
+                </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">PP</th>
+                <td>46</td>
+                <td>66</td>
+              </tr>
+              <tr>
+                <th scope="row">P</th>
+                <td>49</td>
+                <td>69</td>
+              </tr>
+              <tr>
+                <th scope="row">M</th>
+                <td>51</td>
+                <td>71</td>
+              </tr>
+              <tr>
+                <th scope="row">G</th>
+                <td>54</td>
+                <td>73</td>
+              </tr>
+              <tr>
+                <th scope="row">GG</th>
+                <td>60</td>
+                <td>75</td>
+              </tr>
+              <tr>
+                <th scope="row">XG</th>
+                <td>64</td>
+                <td>77</td>
+              </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3" class="text-center">Encomendas pelo site: <a href="#">https://camisetasdevnews.com.br/</a></td>
+                </tr>
+            </tfoot>
+          </table>
+          
+
         <section class="form-newsletter">
             <img src="src/img/primeiro-a-saber.webp" class="img-primeiro-a-saber-gde" alt="imagem com o texto seja o primeiro a saber">
             <img src="src/img/seja-o-primeiro-a-saber.webp" class="img-primeiro-a-saber-pqn" alt="imagem com o texto seja o primeiro a saber">
@@ -188,6 +399,7 @@
                 
             </form>
         </section>
+        
     </main>
     <footer class="footer">
         <ul class="lista-footer">
